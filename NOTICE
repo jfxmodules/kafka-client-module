@@ -1,0 +1,37 @@
+kafka-clients-module
+
+The initial commit for this project was taken from the Apache Kafka project 
+(https://github.com/apache/kafka/tree/3.7.0)
+
+The code for the initial commit was taken from tag 3.7.0. This project is just
+the Kafka clients code. All changes made to the original code base can be seen
+in the diff.out file contained in the root of this project.
+
+I've included the original Notice.txt below, however some of it does not apply
+here because this is just a small part of the overall Kafka code base. This 
+repository does not have a dependency on jersey or jqwik. It also does not have
+scala and therefore no dependency on Lightbend. No dependency on Hive either.
+________________________________________________________________________________
+Apache Kafka
+Copyright 2024 The Apache Software Foundation.
+
+This product includes software developed at
+The Apache Software Foundation (https://www.apache.org/).
+
+This distribution has a binary dependency on jersey, which is available under the CDDL
+License. The source code of jersey can be found at https://github.com/jersey/jersey/.
+
+This distribution has a binary test dependency on jqwik, which is available under
+the Eclipse Public License 2.0. The source code can be found at
+https://github.com/jlink/jqwik.
+
+The streams-scala (streams/streams-scala) module was donated by Lightbend and the original code was copyrighted by them:
+Copyright (C) 2018 Lightbend Inc. <https://www.lightbend.com>
+Copyright (C) 2017-2018 Alexis Seigneurin.
+
+This project contains the following code copied from Apache Hadoop:
+clients/src/main/java/org/apache/kafka/common/utils/PureJavaCrc32C.java
+Some portions of this file Copyright (c) 2004-2006 Intel Corporation and licensed under the BSD license.
+
+This project contains the following code copied from Apache Hive:
+streams/src/main/java/org/apache/kafka/streams/state/internals/Murmur3.java
