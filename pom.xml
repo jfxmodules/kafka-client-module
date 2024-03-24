@@ -16,6 +16,19 @@
         </repository>
     </distributionManagement>
     
+    <repositories>
+        <repository>
+            <id>github-jfxmodules-jose4j</id>
+            <url>https://maven.pkg.github.com/jfxmodules/jose4j-module</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
