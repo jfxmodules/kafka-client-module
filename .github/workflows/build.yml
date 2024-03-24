@@ -28,12 +28,12 @@ jobs:
             [{
                 "id": "github-jfxmodules-jose4j", 
                 "username": "dummy", 
-                "password": "${GITHUB_TOKEN_REF}"
+                "password": "${GITHUB_READONLY_TOKEN_REF}"
               }]
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         env:
-            GITHUB_TOKEN_REF: ${{ secrets.READONLY_PASSWORD }}
+            GITHUB_READONLY_TOKEN_REF: ${{ secrets.READONLY_PASSWORD }}
      
 
